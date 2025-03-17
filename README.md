@@ -5,7 +5,8 @@ This repository contains Python assignments that demonstrate fundamental program
 ---
 
 ## 🚀 Assignment 1: Basic Python Programs
-**Filename:** `assignment1.py` , 'assignment2.py' 
+**Filename:** `assignment1.py` 
+Filename: 'assignment2.py'
 **Description:** This file contains multiple Python programs that cover basic control structures such as conditional statements (`if-else`) and loops.
 
 ### 📌 Included Programs:
@@ -13,8 +14,19 @@ This repository contains Python assignments that demonstrate fundamental program
    - Takes a number as input and checks whether it is even or odd using the modulus operator (`%`).
 
    ```python
-   num = int(input("Enter a number: "))
-   if num % 2 == 0:
-       print("Even")
-   else:
-       print("Odd")
+   age = int(input("Enter age: "))
+gender = input("Enter gender (M/F): ").upper()
+marital_status = input("Enter marital status (Y/N): ").upper()
+
+if gender == 'F':  
+    print("She will work only in urban areas.")
+elif gender == 'M':
+    if 20 <= age <= 40:
+        print("He may work anywhere.")
+    elif 40 <= age <= 60:
+        print("He will work only in urban areas.")
+    else:
+        print("ERROR")
+else:
+    print("ERROR")
+
